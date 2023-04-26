@@ -1,0 +1,91 @@
+.about {
+  top: 200vh;
+  position: absolute;
+  background: url("../../assets/fly-non-stop.jpg");
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: montserrat;
+}
+
+.about__content {
+  text-align: left;
+  position: relative;
+  width: 40%;
+  padding: 25px;
+}
+
+.about__fly {
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0;
+}
+
+.about__nonstop {
+  font-size: 85px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.about__para {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  opacity: 0.5;
+}
+
+.about__me{
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 0.03em;
+color: #ffffff;
+opacity: .8;
+text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .about{
+    flex-direction: column;
+  }
+
+  .about__content{
+    text-align: center;
+  }
+
+  .about__fly{
+    font-size: 30px;
+  }
+
+  .about__nonstop{
+    font-size: 40px;
+    white-space: nowrap;
+    
+  }
+
+  .about__para{
+    font-size: 14px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .about__fly{
+    font-size: 30px;
+  }
+
+  .about__nonstop{
+    font-size: 40px;
+  }
+
+  .about__para{
+    font-size: 14px;
+  }
+}
