@@ -1,0 +1,159 @@
+.user__profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: inline-block;
+}
+
+.details__header {
+  background-color: #e4faff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icon {
+  display: flex;
+  align-items: center;
+  padding-left: 4vh;
+  gap: 0.3vw;
+}
+
+.user__detail {
+  display: flex;
+  align-items: center;
+  padding-right: 4vh;
+  gap: 1vw;
+}
+
+.username > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.icon__name {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 25px;
+  text-align: end;
+}
+
+.content__header > h1 {
+  text-align: center;
+}
+
+.content__fly {
+  width: 260px;
+  height: 249px;
+  background-color: #e4faff;
+  border-radius: 10px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+.booking__header {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.booking__destination {
+  background-color: #f6fdff;
+  height: 88px;
+  width: 108px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.booking__price {
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.booking__price > button {
+  width: 93px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.booking__price > button > span {
+  color: #fff;
+}
+
+.booking__info {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.booking__destination{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking__destination > p {
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+.Box__Content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+  padding: 1rem;
+  place-items: center;
+}
+
+.content__header {
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .Box__Content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Box__Content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+button{
+  cursor: pointer;
+}
+
+.popUp{
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.popUp__content>button{
+  width: 83px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #85e9ff;
+  margin-top: 10px;
+}

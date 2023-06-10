@@ -3,6 +3,7 @@ import "./Support.css";
 import logo1 from "../../assets/customer_support.jpg";
 import logo2 from "../../assets/Flying-returns.png";
 import logo3 from "../../assets/Bid-Upfront.png";
+import { About } from "../about/about";
 
 export const Support = () => {
   return (
@@ -43,6 +44,7 @@ export const Support = () => {
           </div>
         </div>
       </div>
+      <About/>
     </div>
   );
 };

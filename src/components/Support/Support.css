@@ -2,19 +2,26 @@
   position: absolute;
   top: 100vh;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   font-family: montserrat;
 }
 
-div {
-  display: unset;
+
+
+.support__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
 }
 
 .support__container > div > img {
-  height: 40%;
+  /* height: 40%; */
   border-radius: 10px;
-  width: 20%;
-  margin: 20px;
+  width: 100%;
+  transform-style: preserve-3d;
+  display: block;
+  margin-bottom: 5vh;
 }
 
 .support__content > h3 {
@@ -27,21 +34,34 @@ div {
 
 .support__images {
   position: relative;
-  text-align: center;
+  border-radius: 20px;
+  width: 25vw;
 }
 
 .inner__text {
   position: absolute;
   bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  color: #585b5c;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .inner__text {
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #b0b0b0;
-  /* mix-blend-mode: screen; */
   opacity: 0.7;
   border-radius: 0px 0px 10px 10px;
   height: 26vh;
   margin: 20px;
-}
+} */
 
 .support__content > p {
   font-weight: 300;
@@ -59,26 +79,28 @@ div {
 
 .inner__text > h3 {
   font-family: montserrat;
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 26.82px;
   text-align: center;
   color: #272341;
 }
 
-.inner__text > span {
+.inner__text > p {
   font-family: montserrat;
   font-style: normal;
-  font-weight: 300;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 21px;
   line-height: 21px;
   color: #1e1e1e;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 @media screen and (max-width: 767px) {
-.support__content{
-  padding: 20px;
-}
+  .support__content {
+    padding: 20px;
+  }
 
   .support__content > h3 {
     font-weight: 600;
@@ -95,7 +117,10 @@ div {
   .support__container {
     display: flex;
     flex-direction: column;
-    
+  }
+
+  .support__images{
+    width: 50vw;
   }
 
   .inner__text {
