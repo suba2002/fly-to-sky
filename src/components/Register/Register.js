@@ -32,10 +32,10 @@ export const Register = () => {
       .then((res) => {
         res.user.displayName = username;
         console.log(res);
-        navigate("/booking");
+        navigate("/landingPage");
       })
       .catch((err) => console.log(err));
-    navigate("/landingPage");
+    
   };
   return (
     <div className="register">

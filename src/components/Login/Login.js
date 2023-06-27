@@ -17,7 +17,7 @@ export const Login = () => {
     if (username == "" && email == "" && password == "") {
       return;
     }
-    
+
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
