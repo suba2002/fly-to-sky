@@ -9,12 +9,12 @@ export const Support = () => {
   return (
     <div className="support">
       <div className="support__content">
-        <h3>Plan your trip and travel with confidence </h3>
+        <h3>Plan your trip and travel with confidence</h3>
         <p>
           From booking services to help in travel plans,you can expect a lot
           along your journey
-        </p>
-      </div>
+        </p> 
+        </div>
       <div className="support__container">
         <div className="support__images">
           <img src={logo1} alt="customer_support" />

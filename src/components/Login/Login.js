@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./Login.css";
-import logo from "../../assets/fly.png";
 import FlightIcon from "@mui/icons-material/Flight";
 import { Support } from "../Support/Support";
-import auth from "../../firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+// import { firebase } from "firebase/app";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export const Login = () => {
   const [username, setUsername] = useState("");
@@ -16,19 +14,23 @@ export const Login = () => {
   const navigate = useNavigate();
 
   const login = () => {
-    // const auth = auth();
-
-    if (email == "" && username == "" && password == "") {
+    if (username == "" && email == "" && password == "") {
       return;
     }
-
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((res) => {
-        res.user.displayName = username;
-        console.log(res);
+    
+    const auth = getAuth();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log("User authenticated:", user);
         navigate("/booking");
       })
-      .catch((err) => console.log(err));
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error("Authentication error:", errorCode, errorMessage);
+      });
+    navigate("/booking");
   };
 
   return (
@@ -49,6 +51,7 @@ export const Login = () => {
           <p>Enter To Sky...!!</p>
           <input
             type="email"
+            value={email}
             placeholder="E-mail of passenger"
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -59,6 +62,7 @@ export const Login = () => {
           />
           <input
             type="password"
+            value={password}
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -68,6 +72,7 @@ export const Login = () => {
           </button>
         </div>
       </div>
+
       <Support />
     </div>
   );

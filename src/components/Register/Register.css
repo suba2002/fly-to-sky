@@ -1,0 +1,80 @@
+
+
+.register {
+    color: #000;
+    position: relative;
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    position: absolute;
+    font-family: monserrat;
+  }
+  
+  .register > div {
+    z-index: 0;
+  }
+
+  
+  .register__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #e4faff;
+    width: 40vw;
+    height: 55vh;
+    gap: 2.5vh;
+  }
+  
+  .register__container > p {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34.13px;
+    text-align: center;
+    margin-bottom: -2px;
+  }
+  
+  .register__container > input {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2vh;
+    width: 60%;
+  }
+  
+  .register__container > button {
+    border: none;
+    outline: none;
+    background-color: #b3f1ff;
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register__container > button > p {
+    font-weight: 500;
+    /* font-size: 20px; */
+    line-height: 24.38px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .register {
+      flex-direction: column;
+    }
+  
+    .register__container {
+      width: 60vw;
+    }
+  }
+  
+  
+  
