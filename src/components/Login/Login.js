@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./Login.css";
 import FlightIcon from "@mui/icons-material/Flight";
-import { Support } from "../Support/Support";
 import { useNavigate } from "react-router-dom";
-// import { firebase } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { ReactComponent as Icon } from "../../assets/fly-to-sky.svg";
 
 export const Login = () => {
   const [username, setUsername] = useState("");
@@ -32,21 +31,14 @@ export const Login = () => {
       });
     navigate("/booking");
   };
-
   return (
     <div className="login">
-      <div className="login__info">
-        <p>
-          To Find<br></br>
-          <span>
-            THE BEST VALUE <br></br> FLIGHTS
-          </span>
-        </p>
+      <div className="register__intro">
+        <h1> FLY TO SKY</h1>
+        <Icon style={{ margin: "auto" }} />
       </div>
-      <div>
-        {/* <div className="login__logo">
-          <img src={logo} />
-        </div> */}
+      <div className="login__details">
+        <h2>Login</h2>
         <div className="login__container">
           <p>Enter To Sky...!!</p>
           <input
@@ -72,8 +64,6 @@ export const Login = () => {
           </button>
         </div>
       </div>
-
-      <Support />
     </div>
   );
 };

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
+import { useNavigate } from "react-router-dom";
 
 export const Box = (props) => {
   const [click, setClick] = useState(true);
 
+  const navigate=useNavigate();
+  const handleClick = () =>{
+    navigate(`/payment`)
+  }
   return (
     <div className="content__fly">
       {click ? (
@@ -49,6 +54,7 @@ export const Box = (props) => {
               onClick={() => {
                 setClick(false);
               }}
+              className="booking__button1"
             >
               Economy <br /> <span>INR {props.economy}</span>
             </button>
@@ -57,6 +63,7 @@ export const Box = (props) => {
               onClick={() => {
                 setClick(false);
               }}
+              className="booking__button2"
             >
               Business <br />
               <span>INR {props.business}</span>
@@ -78,7 +85,7 @@ export const Box = (props) => {
           </button>
           <div className="popUp__content">
             <h1>Click to Fly</h1>
-            <button>Proceed</button>
+            <button onClick={handleClick}>Proceed</button>
           </div>
         </div>
       )}

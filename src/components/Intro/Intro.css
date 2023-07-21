@@ -1,0 +1,85 @@
+.intro {
+  color: #000;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* position: absolute; */
+  font-family: monserrat;
+}
+
+.intro:before {
+  background-image: url("../../assets/aeroplane.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  content: "";
+  inset: 0px;
+}
+
+.intro > div {
+  z-index: 0;
+}
+
+.intro__info {
+  text-align: center;
+}
+
+.intro__info > p {
+  font-family: monserrat;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 48.76px;
+}
+
+.intro__info > span {
+  font-weight: 700;
+  font-size: 46px;
+  align-items: center;
+  line-height: 56.07px;
+}
+
+.intro__container{
+  display: flex;
+}
+
+.intro__header{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding: 3vh;
+  background-color: #e4faff;
+  top:0;
+  left: 0;
+}
+
+.intro__icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2vh;
+}
+
+
+@media screen and (max-width: 767px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro__info > p {
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .intro__info > span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}

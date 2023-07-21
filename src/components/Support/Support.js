@@ -7,7 +7,7 @@ import { About } from "../about/about";
 
 export const Support = () => {
   return (
-    <div className="support">
+    <div className="support" id="support">
       <div className="support__content">
         <h3>Plan your trip and travel with confidence</h3>
         <p>

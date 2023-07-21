@@ -3,6 +3,8 @@ import "./Details.css";
 import FlightIcon from "@mui/icons-material/Flight";
 import BoltIcon from "@mui/icons-material/Bolt";
 import { Box } from "../Box/Box";
+import { useDispatch } from "react-redux";
+import { set_username } from "../../features/userSlice";
 
 export const Details = () => {
   return (

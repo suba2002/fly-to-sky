@@ -10,6 +10,7 @@
   background-color: #e4faff;
   display: flex;
   justify-content: space-between;
+  height: 10vh;
 }
 
 .header__icon {
@@ -90,6 +91,10 @@
   border-radius: 10px;
   border: none;
   outline: none;
+}
+
+.booking__price>button:hover{
+  background-color: #fffefe;
 }
 
 .booking__price > button > span {

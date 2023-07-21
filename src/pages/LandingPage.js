@@ -1,10 +1,11 @@
 import React from "react";
-import { Login } from "../components/Login/Login";
+import { Intro } from "../components/Intro/Intro";
+
 
 export const LandingPage = () => {
   return (
     <div className="landingPage">
-      <Login />
+     <Intro/>
     </div>
   );
 };

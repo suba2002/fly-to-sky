@@ -1,0 +1,55 @@
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.payment__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    width:70vh;
+    height: 70vh;
+    border-radius: 5px;
+    box-shadow:1px 1px 10px #5c5858;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2vh;
+}
+
+.payment__details>input{
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0px 5px;
+}
+
+form>button{
+    background-color: #66bfd3;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    width:20vh;
+    height: 5vh;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.payment__details{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: auto;
+    margin-bottom: 23px;
+    color:#66bfd3;
+}
