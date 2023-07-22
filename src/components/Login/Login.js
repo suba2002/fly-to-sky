@@ -4,6 +4,7 @@ import FlightIcon from "@mui/icons-material/Flight";
 import { useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { ReactComponent as Icon } from "../../assets/fly-to-sky.svg";
+import Button from "@mui/material/Button";
 
 export const Login = () => {
   const [username, setUsername] = useState("");
@@ -58,10 +59,10 @@ export const Login = () => {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={login}>
-            <p>Fly </p>{" "}
+          <Button variant="contained" onClick={login} style={{width:"20vw"}}>
+            Fly
             <FlightIcon style={{ transform: "rotate(45deg)", height: "3vh" }} />
-          </button>
+          </Button>
         </div>
       </div>
     </div>

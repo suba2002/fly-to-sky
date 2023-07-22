@@ -5,6 +5,7 @@ import FlightIcon from "@mui/icons-material/Flight";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
+
 export const Intro = () => {
   const navigate = useNavigate();
 
@@ -52,6 +53,8 @@ export const Intro = () => {
             >
               View booking details
             </Button>{" "}
+
+            <p></p>
           </div>
         </div>
       </div>

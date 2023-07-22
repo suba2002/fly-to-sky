@@ -7,13 +7,14 @@
   align-items: center;
   justify-content: space-around;
   font-family: montserrat;
+  height: 50vh;
 }
 
 .about__content {
   text-align: left;
   position: relative;
   width: 40%;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 .about__fly {

@@ -37,25 +37,7 @@
     width: 60%;
     font-size: 15px;
   }
-  
-  .login__container > button {
-    border: none;
-    outline: none;
-    background-color: rgb(66,165,178);
-    border-radius: 10px;
-    width: 10vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .login__container > button > p {
-    font-weight: 500;
-    /* font-size: 20px; */
-    line-height: 24.38px;
-    text-align: center;
-  }
+
   
   .login__container > input:focus {
     outline: 3px solid #000; /* Change the color and style as desired */
@@ -91,10 +73,7 @@
   
   }
   
-  .login__container>button:hover{
-    background-color: #fffefe;
-  }
-  
+
   @media screen and (max-width: 767px) {
     .login {
       flex-direction: column;

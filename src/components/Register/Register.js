@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebase";
 import "./Register.css";
 import { ReactComponent as Icon } from "../../assets/fly-to-sky.svg";
+import Button from "@mui/material/Button";
 
 export const Register = () => {
   const [username, setUsername] = useState("");
@@ -13,7 +14,7 @@ export const Register = () => {
   const [ConfirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
 
-  const login = () => {
+  const register = () => {
     // const auth = auth();
 
     if (
@@ -38,6 +39,10 @@ export const Register = () => {
       .catch((err) => console.log(err));
     navigate(`/login`);
   };
+
+  const handleLogin =()=>{
+    navigate("/login")
+  }
   return (
     <div className="register">
       <div className="register__intro">
@@ -69,11 +74,14 @@ export const Register = () => {
             placeholder="confirm password"
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
-          <button onClick={login}>
-            <p>Fly </p>{" "}
+
+          <Button variant="contained" onClick={register} style={{width:"20vw"}} >
+            Fly
             <FlightIcon style={{ transform: "rotate(45deg)", height: "3vh" }} />
-          </button>
+          </Button>
         </div>
+
+        <p style={{fontSize:"20px"}}>If You are a already user? <button type="submit" onClick={handleLogin} style={{outline:"none",border:"none",color:"blue",backgroundColor:"none"}}>LOGIN</button></p>
       </div>
     </div>
   );
