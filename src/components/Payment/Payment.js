@@ -12,25 +12,25 @@ export const Payment = () => {
             <h1>PAYMENT DETAILS</h1>
             <label>CARDHOLDER'S NAME</label>
             <input
-              style={{ width: "400px", height: "47px", outline: "none" }}
+              style={{ width: "350px", height: "47px", outline: "none" }}
             />
           </div>
           <div className="payment__details">
             <label>CARD NUMBER</label>
             <input
-              style={{ width: "400px", height: "47px", outline: "none" }}
+              style={{ width: "350px", height: "47px", outline: "none" }}
             />
           </div>
           <div className="payment__details">
             <label>EXPIRATION DATE</label>
             <input
-              style={{ width: "400px", height: "47px", outline: "none" }}
+              style={{ width: "350px", height: "47px", outline: "none" }}
             />
           </div>
           <div className="payment__details">
             <label>CVV</label>
             <input
-              style={{ width: "400px", height: "47px", outline: "none" }}
+              style={{ width: "350px", height: "47px", outline: "none" }}
             />
           </div>
           <button >Proceed</button>
