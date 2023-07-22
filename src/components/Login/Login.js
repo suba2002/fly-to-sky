@@ -29,7 +29,7 @@ export const Login = () => {
         const errorMessage = error.message;
         console.error("Authentication error:", errorCode, errorMessage);
       });
-    navigate("/booking");
+    navigate("/intro");
   };
   return (
     <div className="login">

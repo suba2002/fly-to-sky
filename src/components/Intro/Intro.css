@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* position: absolute; */
   font-family: monserrat;
 }
 
@@ -33,6 +32,8 @@
   font-weight: 600;
   font-size: 50px;
   line-height: 48.76px;
+  color: #052f5a;
+  
 }
 
 .intro__info > span {
@@ -42,9 +43,6 @@
   line-height: 56.07px;
 }
 
-.intro__container{
-  display: flex;
-}
 
 .intro__header{
   display: flex;
@@ -64,6 +62,35 @@
   justify-content: center;
   gap:2vh;
 }
+
+.intro__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  min-height: 100vh; 
+  width:100%
+}
+
+.intro__booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 5vh;
+}
+
+.intro__booking>h2{
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #b6b6b6;
+  color:#052f5a;
+}
+
+.intro__booking>h3{
+  font-size: 30px;
+}
+
 
 
 @media screen and (max-width: 767px) {
