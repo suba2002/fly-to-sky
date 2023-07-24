@@ -34,7 +34,6 @@ export const Register = () => {
       .then((res) => {
         res.user.displayName = username;
         console.log(res);
-        navigate("/landingPage");
       })
       .catch((err) => console.log(err));
     navigate(`/login`);
