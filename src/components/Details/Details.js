@@ -3,10 +3,11 @@ import "./Details.css";
 import FlightIcon from "@mui/icons-material/Flight";
 import BoltIcon from "@mui/icons-material/Bolt";
 import { Box } from "../Box/Box";
-import { useDispatch } from "react-redux";
-import { set_username } from "../../features/userSlice";
+import { useSelector } from "react-redux";
 
 export const Details = () => {
+  const username=useSelector((state)=>state.user.username)
+  
   return (
     <div className="details">
       <div clas className="details__header">
@@ -23,7 +24,8 @@ export const Details = () => {
         <div className="user__detail">
           <div className="username">
             <p>
-              Welcome!!<br></br>suba
+              Welcome!!
+              {username}
             </p>
           </div>
           <p className="user__profile"></p>

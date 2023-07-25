@@ -1,87 +1,73 @@
 .login {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+.login > div {
+  z-index: 0;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #000;
+  width: 60vh;
+  height: 45vh;
+  gap: 2.5vh;
+}
+
+.login__container > form > p {
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login__container > input:focus {
+  outline: 3px solid #000; /* Change the color and style as desired */
+}
+
+.login__intro > h1 {
+  font-size: 65px;
+  text-shadow: 3px 3px #aeaeae;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.login__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+}
+
+.login__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.login__details > h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .login {
+    flex-direction: column;
+    gap: 10vh;
   }
-  
-  .login > div {
-    z-index: 0;
-  }
-  
+
   .login__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: #e4faff;
-    width: 40vw;
-    height: 45vh;
-    gap: 2.5vh;
+    width: 60vw;
   }
-  
-  .login__container > p {
-    font-weight: 500;
-    font-size: 28px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  .login__container > input {
-    border: none;
-    outline: none;
-    background-color: #fffefe;
-    border-radius: 10px;
-    padding: 2vh;
-    width: 60%;
-    font-size: 15px;
-  }
-
-  
-  .login__container > input:focus {
-    outline: 3px solid #000; /* Change the color and style as desired */
-  }
-  
-  .login__intro > h1 {
-    font-size: 65px;
-    text-shadow: 3px 3px #aeaeae;
-    color: #000;
-    text-transform: uppercase;
-  }
-  
-  .login__intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4vh;
-  }
-  
-  .login__details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:2vh
-  }
-  
-  .login__details>h2{
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #000;
-  
-  }
-  
-
-  @media screen and (max-width: 767px) {
-    .login {
-      flex-direction: column;
-      gap:10vh;
-    }
-  
-    .login__container {
-      width: 60vw;
-    }
-  }
-  
+}

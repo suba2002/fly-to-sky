@@ -15,33 +15,18 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: #e4faff;
-  width: 40vw;
+  /* background-color: #e4faff; */
+  width: 65vh;
   height: 55vh;
   gap: 2.5vh;
+  border: 2px solid #000;
 }
 
-.register__container > p {
+.register__container > form > p {
   font-weight: 500;
   font-size: 28px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.register__container > input {
-  border: none;
-  outline: none;
-  background-color: #fffefe;
-  border-radius: 10px;
-  padding: 2vh;
-  width: 60%;
-  font-size: 15px;
-}
-
-
-
-.register__container > input:focus {
-  outline: 3px solid #000; /* Change the color and style as desired */
 }
 
 .register__intro > h1 {
@@ -59,28 +44,36 @@
   gap: 4vh;
 }
 
-.register__details{
+.register__details {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:2vh
+  gap: 2vh;
 }
 
-.register__details>h2{
+.register__details > h2 {
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
+}
 
+.popup__show {
+  background-color: #66bfd3;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 30vh;
+  text-align: center;
+  padding: 10px;
 }
 
 @media screen and (max-width: 767px) {
   .register {
     flex-direction: column;
-    gap:10vh;
+    gap: 10vh;
   }
 
   .register__container {
-    width: 60vw;
+    width: 65vh;
   }
 }
