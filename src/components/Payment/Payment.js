@@ -1,8 +1,10 @@
 import React from "react";
 import "./Payment.css";
-import { useNavigate } from "react-router-dom";
+
 
 export const Payment = () => {
+
+
   
   return (
     <div className="payment">
@@ -33,7 +35,7 @@ export const Payment = () => {
               style={{ width: "350px", height: "47px", outline: "none" }}
             />
           </div>
-          <button >Proceed</button>
+          <button type="submit" >Proceed</button>
         </form>
       </div>
     </div>

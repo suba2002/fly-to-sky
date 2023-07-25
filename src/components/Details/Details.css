@@ -50,7 +50,8 @@
 .content__fly {
   width: 260px;
   height: 249px;
-  background-color: #e4faff;
+  /* background-color: #e4faff; */
+  border: 2px solid #000;
   border-radius: 10px;
 }
 
@@ -72,7 +73,7 @@
 }
 
 .booking__destination {
-  background-color: #f6fdff;
+  background-color: #e4faff;
   height: 88px;
   width: 108px;
   border-radius: 10px;
