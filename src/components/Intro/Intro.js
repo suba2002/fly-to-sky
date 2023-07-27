@@ -27,7 +27,6 @@ export const Intro = () => {
             />
             <p className="icon__name">FLY TO SKY</p>
           </div>
-          <div className="intro__username"></div>
         </div>
         <div className="intro__container">
           <div className="intro__info">

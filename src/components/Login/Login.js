@@ -105,13 +105,11 @@ export const Login = () => {
               helperText=""
               label="Email"
               size="small"
-              style={{ width: "40vh" }}
               onChange={(e) => setEmail(e.target.value)}
             />
             <FormControl
               sx={{ m: 1, width: "25ch" }}
               size="small"
-              style={{ width: "40vh" }}
               variant="outlined"
             >
               <InputLabel>Password</InputLabel>
@@ -136,7 +134,6 @@ export const Login = () => {
             <Button
               variant="contained"
               onClick={login}
-              style={{ width: "30vh" }}
             >
               Fly
               <FlightIcon

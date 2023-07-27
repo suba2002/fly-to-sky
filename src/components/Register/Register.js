@@ -121,7 +121,6 @@ export const Register = () => {
               helperText=""
               label="Email"
               size="small"
-              style={{ width: "40vh" }}
               onChange={(e) => setEmail(e.target.value)}
             />
 
@@ -129,14 +128,12 @@ export const Register = () => {
               helperText=""
               label="Username"
               size="small"
-              style={{ width: "40vh" }}
               onChange={(e) => setUsername(e.target.value)}
             />
 
             <FormControl
               sx={{ m: 1, width: "25ch" }}
               size="small"
-              style={{ width: "40vh" }}
               variant="outlined"
             >
               <InputLabel>Password</InputLabel>
@@ -162,7 +159,7 @@ export const Register = () => {
             <FormControl
               sx={{ m: 1, width: "25ch" }}
               size="small"
-              style={{ width: "40vh" }}
+
               variant="outlined"
             >
               <InputLabel>Confirm password</InputLabel>
@@ -189,7 +186,6 @@ export const Register = () => {
             <Button
               variant="contained"
               onClick={register}
-              style={{ width: "30vh" }}
             >
               Fly
               <FlightIcon

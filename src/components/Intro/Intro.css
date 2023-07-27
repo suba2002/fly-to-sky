@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: space-between;
   width:100%;
-  padding: 3vh;
+  padding: 2vh;
   background-color: #e4faff;
   top:0;
   left: 0;
@@ -94,16 +94,16 @@
 
 
 @media screen and (max-width: 767px) {
-  .intro__container {
+  /* .intro__container {
     flex-direction: column;
     align-items: center;
-    /* gap: 5vh; */
+    gap: 5vh;
   }
 
   .intro__info>p{
     font-size: 30px;
-    top: 150px;
-    left:35%;
+    top: 13vh;
+    left:20vw;
     position: absolute;
   }
 
@@ -129,12 +129,52 @@
   .intro__booking>button{
     position: absolute;
     top:500px;
-    left:35%;
+    left:25vw;
   }
-}
+ */
 
+ .intro{
+  flex-direction: column;
+ }
+
+ .intro__container{
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .intro__info>p{
+  font-size: 30px;
+  text-align: center;
+ }
+
+ .intro__booking>h2{
+  font-size: 35px;
+  text-align: center;
+ }
+
+ .intro__booking>h3{
+  font-size: 20px;
+  text-align: center;
+ }
+
+ 
+
+
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 
+ .intro__info>p{
+  font-size: 35px;
+ }
 
+ .intro__booking>h2{
+  font-size: 40px;
+  text-align: center;
+ }
+
+ .intro__booking>h3{
+  font-size: 25px;
+  text-align: center;
+ }
 
 }

@@ -15,8 +15,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  /* background-color: #e4faff; */
-  width: 65vh;
+  width: 30vw;
   height: 55vh;
   gap: 2.5vh;
   border: 2px solid #000;
@@ -24,7 +23,7 @@
 
 .register__container > form > p {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 35px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -74,6 +73,30 @@
   }
 
   .register__container {
-    width: 65vh;
+    width: 85vw;
+  }
+  
+  .register__intro>h1{
+    font-size: 50px;
+  }
+
+  .register__details>h2{
+    font-size: 35px;
+  }
+
+  .register__container>form>p{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .register{
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .register__container{
+    width: 55vw;
+    height: 60vh;
   }
 }

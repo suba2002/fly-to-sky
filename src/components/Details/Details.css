@@ -1,10 +1,3 @@
-.user__profile {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-  display: inline-block;
-}
 
 .details__header {
   background-color: #e4faff;
@@ -16,7 +9,7 @@
 .header__icon {
   display: flex;
   align-items: center;
-  padding-left: 4vh;
+  padding: 2vw;
   gap: 0.3vw;
 }
 
@@ -136,6 +129,10 @@
   .Box__Content {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.icon__name{
+  font-size: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -6,8 +6,8 @@ import { Box } from "../Box/Box";
 import { useSelector } from "react-redux";
 
 export const Details = () => {
-  const username=useSelector((state)=>state.user.username)
-  
+  const username = useSelector((state) => state.user.username);
+
   return (
     <div className="details">
       <div clas className="details__header">
@@ -28,11 +28,10 @@ export const Details = () => {
               {username}
             </p>
           </div>
-          <p className="user__profile"></p>
         </div>
       </div>
       <div className="details__content">
-        <div className="content__header" >
+        <div className="content__header">
           <h1>
             IT’S TIME TO FLY HIGH
             <BoltIcon fontSize="large" style={{ color: "#ffc726" }} />
